@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Heredamos la vista principal del empleado y añadimos el nuevo campo
+         justo después de `parent_id` -->
+    <record id="view_employee_form_inherit_supervisor" model="ir.ui.view">
+        <field name="name">hr.employee.form.supervisor</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='parent_id']" position="after">
+                <field name="supervisor_ids" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
