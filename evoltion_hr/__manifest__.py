@@ -1,6 +1,6 @@
 {
     "name": "Añade Supervisor(es) al empleado - SOY CALIDAD",
-    "version": "13.0.1.0.0",
+    "version": "17.0",
     "summary": "Añade Supervisor(es) al empleado - SOY CALIDAD",
     "category": "Human Resources",
     "author": "soy calidad",
