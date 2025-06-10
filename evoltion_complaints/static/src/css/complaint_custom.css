@@ -1,0 +1,26 @@
+/* Sobrescribir el color de fondo de la clase .center */
+.center {
+    background: #000000 !important;
+}
+
+/* Sobrescribir todas las ocurrencias del color #EE0979 */
+
+/* 1. Color de borde en input focus */
+#msform input:focus, #msform textarea:focus {
+    border: 1px solid #FFCA01 !important;
+}
+
+/* 2. Color de fondo del botón de acción */
+#msform .action-button {
+    background: #FFCA01 !important;
+}
+
+/* 3. Color del box-shadow en hover/focus del botón de acción */
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #FFCA01 !important;
+}
+
+/* 4. Color de fondo en progressbar activo */
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #FFCA01 !important;
+}
