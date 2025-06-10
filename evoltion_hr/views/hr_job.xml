@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_hr_job_form_hide_skills" model="ir.ui.view">
+        <field name="name">hr.job.form.hide.skills</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="hr_job_functions.view_hr_job_form" />
+        <field name="arch" type="xml">
+            <!-- Ocultar workteam_skills -->
+            <xpath expr="//field[@name='workteam_skills']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            
+            <!-- Ocultar personal_skills -->
+            <xpath expr="//field[@name='personal_skills']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            
+            <!-- Ocultar strategic_skills -->
+            <xpath expr="//field[@name='strategic_skills']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

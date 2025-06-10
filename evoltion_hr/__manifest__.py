@@ -5,9 +5,10 @@
     "category": "Human Resources",
     "author": "soy calidad",
     "license": "LGPL-3",
-    "depends": ["hr"],
+    "depends": ["hr","hr_job_functions"],
     "data": [
         "views/hr_employee_views.xml",
+        "views/hr_job.xml",
     ],
     "installable": True,
     "application": False,
