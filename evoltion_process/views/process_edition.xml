@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="system_process_edition_form_view_inherit_inherit_evoltion" model="ir.ui.view">
+        <field name="name">process.edition.view.form.inherit</field>
+        <field name="model">process.edition</field>
+        <field name="inherit_id" ref="mgmtsystem_process.system_process_edition_form_view_inherit"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='responsible_ids']/tree/field[@name='name']" position="replace">
+                <field name="job_id" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
